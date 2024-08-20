@@ -1,0 +1,20 @@
+{
+  "devDependencies": {
+    "nodemon": "^3.1.4"
+  },
+  "dependencies": {
+    "express": "^4.19.2",
+    "node": "^22.6.0"
+  },
+  "name": "server-using-express",
+  "version": "1.0.0",
+  "description": "comp node js guide",
+  "main": "app.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "start": "node app.js",
+    "start-start": "node app.js"
+  },
+  "author": "gopinath yadav",
+  "license": "ISC"
+}
