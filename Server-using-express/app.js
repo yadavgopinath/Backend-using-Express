@@ -10,7 +10,7 @@ const shoproutes=require('./routes/shop');
 const contactpg=require('./routes/contact')
 app.use(express.static(path.join(__dirname,'public')));
 
-
+const errorcontroller=require('./controllers/error');
 
 app.use(bodyparser.urlencoded({extended:false}));
 
@@ -18,8 +18,6 @@ app.use('/admin',adminRoutes);
 app.use(shoproutes);
 app.use(contactpg);
 
-app.use((req,res,next)=>{
-res.sendFile(path.join(__dirname,'views','404.html'));
-});
-app.listen(3000);
+app.use(errorcontroller.errorpg);
 
+app.listen(3000);
