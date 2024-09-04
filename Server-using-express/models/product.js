@@ -21,7 +21,7 @@ module.exports=class Product{
         this.title=t;
     }
     save(){
-       
+       this.id=Math.random().toString();
      getproductfromfile(products=>{
         products.push(this);
         fs.writeFile(p,JSON.stringify(products),(err)=>{
