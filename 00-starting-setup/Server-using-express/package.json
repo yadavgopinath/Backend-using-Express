@@ -1,0 +1,23 @@
+{
+  "devDependencies": {
+    "nodemon": "^3.1.4"
+  },
+  "dependencies": {
+    "body-parser": "^1.20.2",
+    "express": "^4.19.2",
+    "node": "^22.6.0",
+    "server-using-express": "file:"
+  },
+  "name": "server-using-express",
+  "version": "1.0.0",
+  "description": "comp node js guide",
+  "main": "app.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "start": "nodemon app.js",
+    "start-start": "node app.js",
+    "dev": "nodemon app.js"
+  },
+  "author": "gopinath yadav",
+  "license": "ISC"
+}
